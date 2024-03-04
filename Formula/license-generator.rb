@@ -8,6 +8,6 @@ class LicenseGenerator < Formula
 
   def install
     ENV["GO111MODULE"] = "auto"
-    system "go", "build", "-o", bin/"gomon", "-ldflags", "-s -w"
+    system "go", "build", "-o", bin/"license-generator", "-ldflags", "-s -w"
   end
 end
